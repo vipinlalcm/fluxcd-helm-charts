@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: loki/
+    path: loki/manifest/
     repoURL: https://git.cygate.io/vipicm/helm-charts.git
     targetRevision: main
   sync:
@@ -19,7 +19,7 @@ spec:
         namespace: kube-logging
         server: https://kubernetes.default.svc
       source:
-        path: loki/manifest/
+        path: loki/
         repoURL: https://git.cygate.io/vipicm/helm-charts.git
         targetRevision: main
   syncPolicy:

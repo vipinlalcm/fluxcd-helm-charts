@@ -13,15 +13,6 @@ spec:
     path: loki/chart/
     repoURL: https://git.cygate.io/vipicm/helm-charts.git
     targetRevision: main
-  sync:
-    comparedTo:
-      destination:
-        namespace: kube-logging
-        server: https://kubernetes.default.svc
-      source:
-        path: loki/
-        repoURL: https://git.cygate.io/vipicm/helm-charts.git
-        targetRevision: main
   syncPolicy:
     automated:
       prune: true

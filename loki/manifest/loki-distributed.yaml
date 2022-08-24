@@ -1,0 +1,30 @@
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: loki-distributed
+  namespace: kube-logging
+spec:
+  destination:
+    namespace: kube-logging
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    path: loki/
+    repoURL: https://git.cygate.io/vipicm/helm-charts.git
+    targetRevision: main
+  sync:
+    comparedTo:
+      destination:
+        namespace: kube-logging
+        server: https://kubernetes.default.svc
+      source:
+        path: loki/manifest/
+        repoURL: https://git.cygate.io/vipicm/helm-charts.git
+        targetRevision: main
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+    syncOptions:
+    - CreateNamespace=true

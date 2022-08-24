@@ -1,6 +1,6 @@
 apiVersion: v2
-name: loki
-version: 1.0.0
+name: loki-distributed
+version: 0.55.7
 dependencies:
   - name: loki
     version: 0.55.7

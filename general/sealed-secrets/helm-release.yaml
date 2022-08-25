@@ -16,9 +16,6 @@ spec:
   interval: 10s
   install:
     createNamespace: true
-    crds: Create
   targetNamespace: flux-system
   values:
     fullnameOverride: sealed-secrets-controller
-  upgrade:
-    crds: CreateReplace

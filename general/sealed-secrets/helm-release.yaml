@@ -14,7 +14,7 @@ spec:
       version: 2.6.0
   interval: 10s
   install:
-    createNamespace: true
+    createNamespace: false
   targetNamespace: flux-system
   values:
     fullnameOverride: sealed-secrets-controller

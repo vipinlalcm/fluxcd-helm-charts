@@ -13,4 +13,6 @@ spec:
         name: grafana
       version: 0.24.2
   interval: 1m0s
+  install:
+    createNamespace: true
   targetNamespace: kube-logging

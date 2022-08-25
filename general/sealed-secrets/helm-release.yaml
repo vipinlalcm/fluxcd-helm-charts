@@ -15,6 +15,9 @@ spec:
   interval: 10s
   install:
     createNamespace: true
+    crds: Create
   targetNamespace: kube-system
   values:
     fullnameOverride: sealed-secrets-controller
+  upgrade:
+    crds: CreateReplace

@@ -18,5 +18,5 @@ spec:
     createNamespace: true
   targetNamespace: kube-logging
   valuesFrom:
-    - kind: Secret
-      name: loki-values
+  - kind: Secret
+    name: loki-values

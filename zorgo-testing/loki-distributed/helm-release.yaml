@@ -17,6 +17,6 @@ spec:
   install:
     createNamespace: true
   targetNamespace: kube-logging
-  # valuesFrom:
-  #   - kind: Secret
-  #     name: loki-values
+  valuesFrom:
+    - kind: Secret
+      name: loki-values

@@ -2,7 +2,7 @@ apiVersion: helm.toolkit.fluxcd.io/v2beta1
 kind: HelmRelease
 metadata:
   name: loki-distributed
-  namespace: flux-system
+  namespace: kube-logging
 spec:
   chart:
     spec:
@@ -19,4 +19,3 @@ spec:
   valuesFrom:
     - kind: Secret
       name: loki-values
-      namespace: kube-logging

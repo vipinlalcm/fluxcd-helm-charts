@@ -19,3 +19,4 @@ spec:
   valuesFrom:
     - kind: Secret
       name: loki-values
+      namespace: kube-logging

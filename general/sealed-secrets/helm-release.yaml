@@ -16,6 +16,6 @@ spec:
   interval: 10s
   install:
     createNamespace: true
-  targetNamespace: flux-system
+  targetNamespace: kube-system
   values:
     fullnameOverride: sealed-secrets-controller

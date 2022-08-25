@@ -16,7 +16,7 @@ spec:
   install:
     createNamespace: true
     crds: Create
-  targetNamespace: kube-logging
+  targetNamespace: flux-system
   values:
     fullnameOverride: sealed-secrets-controller
   upgrade:
